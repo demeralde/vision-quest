@@ -4,5 +4,8 @@ public
 src/gatsby-types.d.ts
 
 notes.md
-src/images/board/**/*
+src/images/board/**/*.jpg
+src/images/board/**/*.jpeg
+src/images/board/**/*.png
+src/images/board/**/*.webp
 src/images/avatar.jpg
