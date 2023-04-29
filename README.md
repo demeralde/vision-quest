@@ -40,7 +40,7 @@ This is a simple and attractive vision board creator. It generates a vision boar
     Add a `.env.local` file with your information to customise the vision board:
 
     ```shell
-    	cp .env.local.example .env.local
+    cp .env.local.example .env.local
     ```
 
     Then edit `.env.local` in your editor.
