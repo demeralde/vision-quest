@@ -35,6 +35,8 @@ This is a simple and attractive vision board creator. It generates a vision boar
 
     Some suggestions for finding high quality photos are [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), and [Pinterest](https://www.pinterest.com/).
 
+    This vision board only supports `.jpg`, `.jpeg`, `.png`, and `.webp` photos.
+
 3.  **Customise your vision board.**
 
     Add a `.env.local` file with your information to customise the vision board:
