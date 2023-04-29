@@ -25,7 +25,7 @@ const IndexPage: React.FC<PageProps> = ({
 			<Header name={process.env.GATSBY_BOARD_NAME as string} />
 			{imagesBySection.length > 0 ? (
 				imagesBySection.map(([name, images]) => (
-					<Section name={getSectionName(name)}>
+					<Section key={name} name={getSectionName(name)}>
 						{images.map(({ node: { name, childImageSharp } }, index) => (
 							<Image key={name} alt={name} image={getImage(childImageSharp)} />
 						))}
