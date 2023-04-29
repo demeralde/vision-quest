@@ -1,4 +1,5 @@
 import * as React from "react";
+import { PhotoIcon } from "@heroicons/react/24/solid";
 import groupBy from "lodash/groupBy";
 import type { HeadFC, PageProps } from "gatsby";
 import { graphql } from "gatsby";
@@ -8,6 +9,7 @@ import Layout from "components/Layout";
 import Image from "components/Image";
 import Header from "components/Header";
 import Section from "components/Section";
+import EmptyPlaceholder from "components/EmptyPlaceholder";
 
 const IndexPage: React.FC<PageProps> = ({
 	data,
@@ -21,13 +23,17 @@ const IndexPage: React.FC<PageProps> = ({
 	return (
 		<Layout>
 			<Header name="Daniel Emeralde" />
-			{imagesBySection.map(([name, images]) => (
-				<Section name={getSectionName(name)}>
-					{images.map(({ node: { name, childImageSharp } }, index) => (
-						<Image key={name} alt={name} image={getImage(childImageSharp)} />
-					))}
-				</Section>
-			))}
+			{imagesBySection.length > 0 ? (
+				imagesBySection.map(([name, images]) => (
+					<Section name={getSectionName(name)}>
+						{images.map(({ node: { name, childImageSharp } }, index) => (
+							<Image key={name} alt={name} image={getImage(childImageSharp)} />
+						))}
+					</Section>
+				))
+			) : (
+				<EmptyPlaceholder />
+			)}
 		</Layout>
 	);
 };
@@ -40,7 +46,7 @@ export const Head: HeadFC = () => (
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap"
 			rel="stylesheet"
 		/>
 	</>

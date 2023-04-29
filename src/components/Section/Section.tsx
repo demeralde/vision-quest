@@ -1,8 +1,6 @@
 import React from "react";
 
-import Grid from "components/Grid";
-
-import { Container, Title } from "./styles";
+import { Container, Title, Grid } from "./styles";
 import { SectionProps } from "./types";
 
 const Section = ({ name, children }: SectionProps) => (
