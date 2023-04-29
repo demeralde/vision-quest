@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Vision quest" src="/src/images/vision-quest--sm.jpg" width="100%" />
+  <img alt="Vision quest" src="/src/images/demo.jpg" width="100%" />
 </p>
 <h1 align="center">
   Vision Quest
