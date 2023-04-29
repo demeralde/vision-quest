@@ -22,7 +22,7 @@ const IndexPage: React.FC<PageProps> = ({
 
 	return (
 		<Layout>
-			<Header name="Daniel Emeralde" />
+			<Header name={process.env.GATSBY_BOARD_NAME as string} />
 			{imagesBySection.length > 0 ? (
 				imagesBySection.map(([name, images]) => (
 					<Section name={getSectionName(name)}>
@@ -42,7 +42,7 @@ export default IndexPage;
 
 export const Head: HeadFC = () => (
 	<>
-		<title>Vision Quest</title>
+		<title>{process.env.GATSBY_BOARD_NAME}</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
 		<link

@@ -39,17 +39,17 @@ This is a simple and attractive vision board creator. It generates a vision boar
 
 3.  **Customise your vision board.**
 
-    Add a `.env.local` file with your information to customise the vision board:
+    Add a `.env` file with your information to customise the vision board:
 
     ```shell
-    cp .env.local.example .env.local
+    cp .env.example .env
     ```
 
-    Then edit `.env.local` in your editor.
+    Then edit `.env` in your editor.
 
 4.  **Add your avatar.**
 
-    Add a headshot of yourself to `src/images/avatar.jpg`. It will add this photo to the top of the vision board, above your name you configured in `.env.local`.
+    Add a headshot of yourself to `src/images/avatar.jpg`. It will add this photo to the top of the vision board, above your name you configured in `.env`.
 
 5.  **Start the development server.**
 
