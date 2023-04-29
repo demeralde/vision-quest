@@ -31,6 +31,7 @@ const config: GatsbyConfig = {
 		},
 		"gatsby-plugin-postcss",
 		"gatsby-plugin-emotion",
+		"gatsby-plugin-offline",
 	],
 };
 
