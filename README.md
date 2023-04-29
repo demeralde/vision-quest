@@ -5,43 +5,72 @@
   Vision Quest
 </h1>
 
+This is a simple and attractive vision board creator. It generates a vision board you can run in any browser. It's free, open source, and works excellently.
+
+## ✨ Features
+
+- Easy to use—add photos to `src/photos/board`, and it will automatically generate the vision board
+- Beautiful, simple design
+- Responsive design for all devices
+- High performance with super fast load times (it's using [Gatsby](https://www.gatsbyjs.com/))
+- High resolution, optimised, zoomable images with blurred placeholders
+- Free and open source
+- Private—you own your data
+- Works offline (PWA)
+- Customisable avatar/name
+- Easily deployable, or it can be run locally via `yarn develop`
+
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Fork the repository.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+    Fork this repository on GitHub to create your own vision board.
+
+2.  **Add your vision board photos.**
+
+    Add them to the `src/photos/board` directory:
+
+    - If they're not stored in a subfolder (directly in `src/photos/board`), the photos will render at the top of the vision board without a title.
+    - If they're stored in a subfolder, the subfolder name will be used as the section name. e.g `src/photos/board/Health & Fitness` will have a _"Health & Fitness"_ title for all its photos
+
+    Some suggestions for finding high quality photos are [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), and [Pinterest](https://www.pinterest.com/).
+
+3.  **Customise your vision board.**
+
+    Add a `.env.local` file with your information to customise the vision board:
 
     ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
+    	cp .env.local.example .env.local
     ```
 
-2.  **Start developing.**
+    Then edit `.env.local` in your editor.
 
-    Navigate into your new site’s directory and start it up.
+4.  **Add your avatar.**
+
+    Add a headshot of yourself to `src/images/avatar.jpg`. It will add this photo to the top of the vision board, above your name you configured in `.env.local`.
+
+5.  **Start the development server.**
 
     ```shell
-    cd my-gatsby-site/
-    npm run develop
+    cd vision-quest/
+    yarn develop
     ```
 
-3.  **Open the code and start customizing!**
+    The server will run on `http://localhost:8000`.
 
-    Your site is now running at http://localhost:8000!
+## 🚀 Deployment
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+You can build the vision board and deploy it manually yourself:
 
-4.  **Learn more**
+```shell
+yarn build
+yarn serve
+```
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+Or you can deploy your vision board with one click on [Netlify](https://app.netlify.com/signup):
 
 [<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+
+If you deploy it online, I suggest adding password protection for privacy. Netlify has an option for this, as do most cloud services.
+
+Otherwise you can run it locally on your device with the development server (or `yarn build` and `yarn serve`).
