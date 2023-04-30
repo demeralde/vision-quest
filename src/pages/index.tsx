@@ -17,7 +17,6 @@ const IndexPage: React.FC<PageProps> = ({
 	const imagesBySection = Object.entries(
 		groupBy(data.images.edges, "node.relativeDirectory")
 	);
-
 	const getSectionName = (name: string): string => name.replace("board/", "");
 
 	return (
