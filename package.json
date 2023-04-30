@@ -14,9 +14,13 @@
 		"clean": "gatsby clean",
 		"typecheck": "tsc --noEmit",
 		"prettier": "prettier -c \"**/*.js\" \"**/*.ts\" \"**/*.tsx\"",
-		"prettier:fix": "yarn prettier -- --write"
+		"prettier:fix": "yarn prettier -- --write",
+		"lint": "eslint -c .eslintrc.js .",
+		"lint:fix": "yarn lint --fix"
 	},
 	"dependencies": {
+		"@emotion/react": "^11.10.8",
+		"@emotion/styled": "^11.10.8",
 		"@heroicons/react": "^2.0.17",
 		"dotenv": "^16.0.3",
 		"gatsby": "^5.9.0",
@@ -30,22 +34,34 @@
 		"lodash": "^4.17.21",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"react-medium-image-zoom": "^5.1.5"
+		"react-medium-image-zoom": "^5.1.5",
+		"twin.macro": "^3.3.1"
 	},
 	"devDependencies": {
-		"@emotion/react": "^11.10.8",
-		"@emotion/styled": "^11.10.8",
 		"@types/node": "^18.15.13",
 		"@types/react": "^18.2.0",
 		"@types/react-dom": "^18.0.11",
+		"@typescript-eslint/eslint-plugin": "^5.59.1",
+		"@typescript-eslint/parser": "^5.59.1",
+		"@typescript-eslint/typescript-estree": "^5.59.1",
 		"autoprefixer": "^10.4.14",
+		"eslint": "^8.39.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-airbnb-typescript": "^17.0.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-import-resolver-alias": "^1.1.2",
+		"eslint-import-resolver-typescript": "^3.5.5",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-jsx-a11y": "^6.7.1",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-react": "^7.32.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
 		"gatsby-plugin-emotion": "^8.9.0",
 		"gatsby-plugin-postcss": "^6.9.0",
 		"gatsby-plugin-root-import": "^2.0.9",
 		"postcss": "^8.4.23",
 		"prettier": "^2.8.8",
 		"tailwindcss": "^3.3.2",
-		"twin.macro": "^3.3.1",
 		"typescript": "^5.0.4"
 	}
 }

@@ -104,6 +104,14 @@
 		"./src/**/*",
 		"./gatsby-node.ts",
 		"./gatsby-config.ts",
-		"./plugins/**/*"
+		"./plugins/**/*",
+		".eslintrc.js",
+		"tailwind.config.js",
+		"postcss.config.js",
+		"lint-staged.config.js",
+		".huskrc.js",
+		"graphql.config.js",
+		"gatsby-browser.ts",
+		"babel-plugin-macros.config.js"
 	]
 }
