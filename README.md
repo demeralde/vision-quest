@@ -1,23 +1,29 @@
 <p align="center">
-  <img alt="Vision quest" src="/src/images/demo.jpg" width="100%" />
+  <img alt="Screenshot of Vision Quest" src="/src/images/demo.jpg" width="100%" />
+</p>
+<p align="center">
+  <img alt="Logo" src="/src/images/icon.svg" width="70px" />
 </p>
 <h1 align="center">
   Vision Quest
 </h1>
 
-This is a simple and attractive vision board creator. It generates a vision board you can run in any browser. It's free, open source, and works excellently.
+**This is a simple and attractive vision board creator.** It generates a personal vision board you can run in any browser. It's free, open source, and works excellently.
+
+If you're unfamiliar with the concept of a vision board, it's a series of photos for each area of your life. You can use it for inspiration, motivation, and visualisation. Regardless of whether you believe in the law of attraction or not, it's still a powerful tool.
+
+I made this project because I was dissatisfied with other vision board creation software, and wanted something that would meet my needs. It's open source so anyone can enjoy it.
 
 ## ✨ Features
 
-- Easy to use—add photos to `src/photos/board`, and it will automatically generate the vision board
-- Beautiful, simple design
-- Responsive design for all devices
-- High performance and statically generated, with super fast load times (it's using [Gatsby](https://www.gatsbyjs.com/))
-- Self-host or run locally on your device
+- **Easy to use**—add photos to subfolders in `src/photos/board`, and it will automatically generate the vision board
+- **Beautiful, simple, and responsive design**
+- **High performance** and statically generated, with super fast load times (it's using [Gatsby](https://www.gatsbyjs.com/))
+- **Self-host anywhere or run locally** on your device
 - High resolution, optimised, and zoomable images with blurred placeholders
+- [Progressive Web App](https://web.dev/progressive-web-apps/) (works offline + installable on devices)
 - Free and open source
 - Private—you own your data
-- Works offline (PWA)
 - Customisable avatar/name
 
 ## 🚀 Quick start
@@ -28,9 +34,9 @@ This is a simple and attractive vision board creator. It generates a vision boar
 
 2.  **Add photos to your vision board.**
 
-    a) Create a subfolder for each section of your vision board, such as `src/photos/board/Health & Fitness`. The name of the subfolder will be used as a title for the section on the vision board, e.g _"Health & Fitness"_
+    **a)** Create a subfolder for each section of your vision board, such as `src/photos/board/Health & Fitness`. The name of the subfolder will be used as a title for the section on the vision board, e.g _"Health & Fitness"_
 
-    b) Add photos to each subfolder. The filename of each photo will be used as its tooltip/alt text.
+    **b)** Add photos to each subfolder. The filename of each photo will be used as its tooltip/alt text.
 
     **Supported image formats:** `.jpg`, `.jpeg`, `.png`, and `.webp`
 
