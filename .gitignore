@@ -4,8 +4,3 @@ public
 src/gatsby-types.d.ts
 .env
 notes.md
-src/images/board/**/*.jpg
-src/images/board/**/*.jpeg
-src/images/board/**/*.png
-src/images/board/**/*.webp
-src/images/avatar.jpg
