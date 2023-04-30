@@ -11,7 +11,9 @@ import Section from "components/Section";
 import EmptyPlaceholder from "components/EmptyPlaceholder";
 import SEO from "components/SEO";
 
-const IndexPage: React.FC<PageProps> = ({ data }: PageProps<Queries.IndexPageQuery>) => {
+const IndexPage: React.FC<PageProps> = ({
+	data,
+}: PageProps<Queries.IndexPageQuery>): React.ReactElement => {
 	const imagesBySection = Object.entries(groupBy(data.images.edges, "node.relativeDirectory"));
 	const getSectionName = (name: string): string => name.replace("board/", "");
 
@@ -19,9 +21,9 @@ const IndexPage: React.FC<PageProps> = ({ data }: PageProps<Queries.IndexPageQue
 		<Layout>
 			<Header name={process.env.GATSBY_BOARD_NAME as string} />
 			{imagesBySection.length > 0 ? (
-				imagesBySection.map(([name, images]) => (
-					<Section key={name} name={getSectionName(name)}>
-						{images.map(({ node: { name, childImageSharp } }, index) => (
+				imagesBySection.map(([sectionName, images]) => (
+					<Section key={sectionName} name={getSectionName(sectionName)}>
+						{images.map(({ node: { name, childImageSharp } }) => (
 							<Image key={name} alt={name} title={name} image={getImage(childImageSharp)} />
 						))}
 					</Section>
@@ -35,7 +37,7 @@ const IndexPage: React.FC<PageProps> = ({ data }: PageProps<Queries.IndexPageQue
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <SEO />;
+export const Head: HeadFC = (): React.ReactElement => <SEO />;
 
 export const query = graphql`
 	query IndexPage {
