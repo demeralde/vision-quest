@@ -12,7 +12,7 @@ const Header = ({ name }: HeaderProps) => {
 		query HeaderQuery {
 			file(relativePath: { eq: "avatar.jpg" }) {
 				childImageSharp {
-					gatsbyImageData(quality: 100, placeholder: BLURRED)
+					gatsbyImageData(placeholder: BLURRED)
 				}
 			}
 		}

@@ -69,7 +69,7 @@ export const query = graphql`
 					relativeDirectory
 					name
 					childImageSharp {
-						gatsbyImageData(quality: 100, placeholder: BLURRED)
+						gatsbyImageData(placeholder: BLURRED)
 					}
 				}
 			}
