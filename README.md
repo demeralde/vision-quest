@@ -26,20 +26,18 @@ This is a simple and attractive vision board creator. It generates a vision boar
 
     Fork this repository on GitHub to create your own vision board.
 
-2.  **Add your vision board photos.**
+2.  **Add photos to your vision board.**
 
-    Add them to the `src/photos/board` directory:
+    a) Create a subfolder for each section of your vision board, such as `src/photos/board/Health & Fitness`. The name of the subfolder will be used as a title for the section on the vision board, e.g _"Health & Fitness"_
+    b) Add photos to each subfolder. The filename of each photo will be used as its tooltip/alt text.
 
-    - If they're not stored in a subfolder (directly in `src/photos/board`), the photos will render at the top of the vision board without a title.
-    - If they're stored in a subfolder, the subfolder name will be used as the section name. e.g `src/photos/board/Health & Fitness` will have a _"Health & Fitness"_ title for all its photos
+    **Supported image formats:** `.jpg`, `.jpeg`, `.png`, and `.webp`
 
     Some suggestions for finding high quality photos are [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), and [Pinterest](https://www.pinterest.com/).
 
-    This vision board only supports `.jpg`, `.jpeg`, `.png`, and `.webp` photos.
+3.  **Configure the environment variables.**
 
-3.  **Customise your vision board.**
-
-    Add a `.env` file with your information to customise the vision board:
+    Add a `.env` file with your information to customise the vision board settings:
 
     ```shell
     cp .env.example .env
@@ -49,7 +47,7 @@ This is a simple and attractive vision board creator. It generates a vision boar
 
 4.  **Add your avatar.**
 
-    Add a headshot of yourself to `src/images/avatar.jpg`. It will add this photo to the top of the vision board, above your name you configured in `.env`.
+    Add a headshot of yourself to `src/images/avatar.jpg`. It will add this photo to the top of the vision board.
 
 5.  **Start the development server.**
 
