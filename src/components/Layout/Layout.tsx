@@ -5,10 +5,10 @@ import { Container } from "./styles";
 import { LayoutProps } from "./types";
 
 const Layout = ({ children, ...rest }: LayoutProps): React.ReactElement => (
-		<Container {...rest}>
-			<GlobalStyles />
-			{children}
-		</Container>
-	);
+	<Container {...rest}>
+		<GlobalStyles />
+		{children}
+	</Container>
+);
 
 export default Layout;
