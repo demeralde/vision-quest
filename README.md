@@ -12,13 +12,13 @@ This is a simple and attractive vision board creator. It generates a vision boar
 - Easy to use—add photos to `src/photos/board`, and it will automatically generate the vision board
 - Beautiful, simple design
 - Responsive design for all devices
-- High performance with super fast load times (it's using [Gatsby](https://www.gatsbyjs.com/))
-- High resolution, optimised, zoomable images with blurred placeholders
+- High performance and statically generated, with super fast load times (it's using [Gatsby](https://www.gatsbyjs.com/))
+- Self-host or run locally on your device
+- High resolution, optimised, and zoomable images with blurred placeholders
 - Free and open source
 - Private—you own your data
 - Works offline (PWA)
 - Customisable avatar/name
-- Easily deployable, or it can be run locally via `yarn develop`
 
 ## 🚀 Quick start
 
