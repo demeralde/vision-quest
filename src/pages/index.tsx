@@ -10,6 +10,7 @@ import Image from "components/Image";
 import Header from "components/Header";
 import Section from "components/Section";
 import EmptyPlaceholder from "components/EmptyPlaceholder";
+import SEO from "components/SEO";
 
 const IndexPage: React.FC<PageProps> = ({
 	data,
@@ -44,17 +45,7 @@ const IndexPage: React.FC<PageProps> = ({
 
 export default IndexPage;
 
-export const Head: HeadFC = () => (
-	<>
-		<title>{process.env.GATSBY_BOARD_NAME}</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap"
-			rel="stylesheet"
-		/>
-	</>
-);
+export const Head: HeadFC = () => <SEO />;
 
 export const query = graphql`
 	query IndexPage {
