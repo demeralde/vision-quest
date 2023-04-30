@@ -2,6 +2,8 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
+import GraphPaper from "images/graph-paper.svg";
+
 import { HeaderProps } from "./types";
 import { Container, Avatar, Name } from "./styles";
 
@@ -17,7 +19,11 @@ const Header = ({ name }: HeaderProps) => {
 	`);
 
 	return (
-		<Container>
+		<Container
+			style={{
+				backgroundImage: `url("${GraphPaper}")`,
+			}}
+		>
 			<Avatar alt={name} image={getImage(avatarImage.file)} />
 			<Name>{name}</Name>
 		</Container>
