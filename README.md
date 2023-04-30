@@ -81,3 +81,15 @@ Or you can deploy your vision board with one click on [Netlify](https://app.netl
 If you deploy it online, I suggest adding password protection for privacy. Netlify has an option for this, as do most cloud services.
 
 Otherwise you can run it locally on your device with the development server (or `yarn build` and `yarn serve`).
+
+## 👨‍💻 Tech stack
+
+These are the primary technologies and libraries used in this project:
+
+- [Gatsby.js](https://www.gatsbyjs.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [twin.macro](https://github.com/ben-rogerson/twin.macro)
+- [Emotion Styled Components](https://emotion.sh/docs/styled)
+- [TypeScript](https://www.typescriptlang.org/)
+- [heroicons](https://heroicons.com/)
+- [react-medium-image-zoom](https://github.com/rpearce/react-medium-image-zoom)
