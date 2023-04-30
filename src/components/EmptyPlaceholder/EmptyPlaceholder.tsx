@@ -8,11 +8,7 @@ const EmptyPlaceholder = () => (
 		<Title>No photos exist</Title>
 		<Description>
 			Add some to your <Code>src/images/board</Code> folder. Check out{" "}
-			<Link
-				href="https://github.com/dspacejs/vision-quest"
-				target="_blank"
-				rel="noreferrer"
-			>
+			<Link href="https://github.com/dspacejs/vision-quest" target="_blank" rel="noreferrer">
 				the documentation
 			</Link>{" "}
 			for more help.

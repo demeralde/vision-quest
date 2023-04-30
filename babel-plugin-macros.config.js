@@ -1,5 +1,5 @@
 module.exports = {
-  twin: {
-    preset: "emotion",
-  },
+	twin: {
+		preset: "emotion",
+	},
 };

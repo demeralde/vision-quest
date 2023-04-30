@@ -1,5 +1,4 @@
 import * as React from "react";
-import { PhotoIcon } from "@heroicons/react/24/solid";
 import groupBy from "lodash/groupBy";
 import type { HeadFC, PageProps } from "gatsby";
 import { graphql } from "gatsby";
@@ -12,12 +11,8 @@ import Section from "components/Section";
 import EmptyPlaceholder from "components/EmptyPlaceholder";
 import SEO from "components/SEO";
 
-const IndexPage: React.FC<PageProps> = ({
-	data,
-}: PageProps<Queries.IndexPageQuery>) => {
-	const imagesBySection = Object.entries(
-		groupBy(data.images.edges, "node.relativeDirectory")
-	);
+const IndexPage: React.FC<PageProps> = ({ data }: PageProps<Queries.IndexPageQuery>) => {
+	const imagesBySection = Object.entries(groupBy(data.images.edges, "node.relativeDirectory"));
 	const getSectionName = (name: string): string => name.replace("board/", "");
 
 	return (
@@ -27,12 +22,7 @@ const IndexPage: React.FC<PageProps> = ({
 				imagesBySection.map(([name, images]) => (
 					<Section key={name} name={getSectionName(name)}>
 						{images.map(({ node: { name, childImageSharp } }, index) => (
-							<Image
-								key={name}
-								alt={name}
-								title={name}
-								image={getImage(childImageSharp)}
-							/>
+							<Image key={name} alt={name} title={name} image={getImage(childImageSharp)} />
 						))}
 					</Section>
 				))
