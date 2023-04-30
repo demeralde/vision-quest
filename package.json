@@ -12,7 +12,9 @@
 		"build": "gatsby build",
 		"serve": "gatsby serve",
 		"clean": "gatsby clean",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"prettier": "prettier -c \"**/*.js\" \"**/*.ts\" \"**/*.tsx\"",
+		"prettier:fix": "yarn prettier -- --write"
 	},
 	"dependencies": {
 		"@heroicons/react": "^2.0.17",
@@ -41,6 +43,7 @@
 		"gatsby-plugin-postcss": "^6.9.0",
 		"gatsby-plugin-root-import": "^2.0.9",
 		"postcss": "^8.4.23",
+		"prettier": "^2.8.8",
 		"tailwindcss": "^3.3.2",
 		"twin.macro": "^3.3.1",
 		"typescript": "^5.0.4"
