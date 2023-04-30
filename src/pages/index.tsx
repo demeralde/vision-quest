@@ -27,7 +27,12 @@ const IndexPage: React.FC<PageProps> = ({
 				imagesBySection.map(([name, images]) => (
 					<Section key={name} name={getSectionName(name)}>
 						{images.map(({ node: { name, childImageSharp } }, index) => (
-							<Image key={name} alt={name} image={getImage(childImageSharp)} />
+							<Image
+								key={name}
+								alt={name}
+								title={name}
+								image={getImage(childImageSharp)}
+							/>
 						))}
 					</Section>
 				))
