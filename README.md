@@ -29,6 +29,7 @@ This is a simple and attractive vision board creator. It generates a vision boar
 2.  **Add photos to your vision board.**
 
     a) Create a subfolder for each section of your vision board, such as `src/photos/board/Health & Fitness`. The name of the subfolder will be used as a title for the section on the vision board, e.g _"Health & Fitness"_
+
     b) Add photos to each subfolder. The filename of each photo will be used as its tooltip/alt text.
 
     **Supported image formats:** `.jpg`, `.jpeg`, `.png`, and `.webp`
