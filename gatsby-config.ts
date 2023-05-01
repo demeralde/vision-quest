@@ -35,6 +35,19 @@ const config: GatsbyConfig = {
 		"gatsby-plugin-postcss",
 		"gatsby-plugin-emotion",
 		"gatsby-plugin-offline",
+		{
+			resolve: "gatsby-plugin-sentry",
+			options: {
+				dsn: process.env.GATSBY_SENTRY_DSN,
+				environment: process.env.NODE_ENV,
+				enabled: (() => {
+					const dsnExists = process.env.GATSBY_SENTRY_DSN != null;
+					const isCorrectEnvironment =
+						["production", "stage"].indexOf(process.env.NODE_ENV as string) !== -1;
+					return dsnExists && isCorrectEnvironment;
+				})(),
+			},
+		},
 	],
 };
 

@@ -44,13 +44,15 @@ I made this project because I was dissatisfied with other vision board creation 
 
 3.  **Configure the environment variables.**
 
-    Add a `.env` file with your information to customise the vision board settings:
+    Create a `.env` file using `.env.example`:
 
     ```shell
     cp .env.example .env
     ```
 
-    Then edit `.env` in your editor.
+    Then edit `.env` in your editor with your preferred settings.
+
+    Note if `GATSBY_SENTRY_DSN` is not set, [Sentry](https://sentry.io/) will be disabled.
 
 4.  **Add your avatar.**
 
