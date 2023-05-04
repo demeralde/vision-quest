@@ -92,6 +92,34 @@ If you deploy it online, I suggest adding password protection for privacy. Netli
 
 Otherwise you can run it locally on your device with the development server (or `yarn build` and `yarn serve`).
 
+## 🛠️ Utility commands
+
+Run Prettier:
+
+```shell
+yarn prettier
+yarn prettier:fix # Fix errors
+```
+
+Run ESLint:
+
+```shell
+yarn lint
+yarn lint:fix # Fix errors
+```
+
+Run TypeScript checking:
+
+```shell
+yarn typecheck
+```
+
+Remove `node_modules`, `.cache`, and `public` folders for regeneration:
+
+```shell
+yarn clean
+```
+
 ## 👨‍💻 Tech stack
 
 These are the primary technologies and libraries used in this project:
