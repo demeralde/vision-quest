@@ -5,7 +5,7 @@ import { getImage } from "gatsby-plugin-image";
 import GraphPaper from "images/graph-paper.svg";
 
 import { HeaderProps } from "./types";
-import { Container, Avatar, Name } from "./styles";
+import { Container, Avatar, AvatarContainer, Name, NameContainer } from "./styles";
 
 const Header = ({ name }: HeaderProps) => {
 	const avatarImage = useStaticQuery(graphql`
@@ -24,8 +24,12 @@ const Header = ({ name }: HeaderProps) => {
 				backgroundImage: `url("${GraphPaper}")`,
 			}}
 		>
-			<Avatar alt={name} image={getImage(avatarImage.file)} />
-			<Name>{name}</Name>
+			<AvatarContainer>
+				<Avatar alt={name} image={getImage(avatarImage.file)} />
+			</AvatarContainer>
+			<NameContainer>
+				<Name>{name}</Name>
+			</NameContainer>
 		</Container>
 	);
 };
