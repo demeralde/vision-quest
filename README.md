@@ -69,7 +69,6 @@ I made this project because I was dissatisfied with other vision board creation 
 6.  **Start the development server.**
 
     ```shell
-    cd vision-quest/
     yarn develop
     ```
 
