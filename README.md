@@ -32,7 +32,15 @@ I made this project because I was dissatisfied with other vision board creation 
 
     Fork this repository on GitHub to create your own vision board.
 
-2.  **Add photos to your vision board.**
+2.  **Install the dependencies.**
+
+    Install the project's dependencies with [Yarn](https://yarnpkg.com/):
+
+    ```shell
+    yarn install
+    ```
+
+3.  **Add photos to your vision board.**
 
     **a)** Create a subfolder for each section of your vision board, such as `src/photos/board/Health & Fitness`. The name of the subfolder will be used as a title for the section on the vision board, e.g _"Health & Fitness"_
 
@@ -40,9 +48,9 @@ I made this project because I was dissatisfied with other vision board creation 
 
     **Supported image formats:** `.jpg`, `.jpeg`, `.png`, and `.webp`
 
-    Some suggestions for finding high quality photos are [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), and [Pinterest](https://www.pinterest.com/).
+    Some website suggestions for finding high quality, interesting photos are [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), and [Pinterest](https://www.pinterest.com/).
 
-3.  **Configure the environment variables.**
+4.  **Configure the environment variables.**
 
     Create a `.env` file using `.env.example`:
 
@@ -54,11 +62,11 @@ I made this project because I was dissatisfied with other vision board creation 
 
     Note if `GATSBY_SENTRY_DSN` is not set, [Sentry](https://sentry.io/) will be disabled.
 
-4.  **Add your avatar.**
+5.  **Add your avatar.**
 
     Add a headshot of yourself to `src/images/avatar.jpg`. It will add this photo to the top of the vision board.
 
-5.  **Start the development server.**
+6.  **Start the development server.**
 
     ```shell
     cd vision-quest/
