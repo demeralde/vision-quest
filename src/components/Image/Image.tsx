@@ -6,7 +6,7 @@ import { ImageProps } from "./types";
 
 const Image = (props: ImageProps) => (
 	<Zoom>
-		<StyledImage backgroundColor="#e2e8f0" style={{ height: "100%" }} {...props} />
+		<StyledImage backgroundColor="#e2e8f0" {...props} />
 	</Zoom>
 );
 
