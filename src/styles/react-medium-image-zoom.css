@@ -1,5 +1,6 @@
 [data-rmiz] {
 	position: relative;
+	display: flex;
 }
 [data-rmiz-ghost] {
 	position: absolute;
@@ -42,9 +43,6 @@
 	inset: 20px 20px auto auto;
 	cursor: zoom-out;
 	z-index: 1;
-}
-[data-rmiz-content="found"] {
-	height: 100%;
 }
 [data-rmiz-content="found"] img,
 [data-rmiz-content="found"] svg,
