@@ -5,7 +5,7 @@ import InViewAnimation from "components/InViewAnimation";
 
 const Container = tw.div`text-center px-4 py-12 xl:p-24`;
 
-const Avatar = styled(GatsbyImage)(() => [tw`w-40 rounded-full`]);
+const Avatar = styled(GatsbyImage)(() => [tw`w-40 rounded-full shadow-xl`]);
 
 const AvatarContainer = styled(InViewAnimation)(() => [tw`justify-center`]);
 
